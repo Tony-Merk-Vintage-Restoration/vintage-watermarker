@@ -24,6 +24,14 @@
                 The images currently being processed will be shown beneath the
                 <strong>Working On...</strong> heading. Once there are no image
                 names shown there, the process is complete.
+                <ul>
+                    <li>
+                        Note: There may be a delay between when the image
+                        disappears from the <strong>Working On...</strong> list
+                        and when the image shows up in the
+                        <strong>Finished Images</strong> section.
+                    </li>
+                </ul>
             </li>
             <li>
                 To save the watermarked images, tap and hold each image under
@@ -199,7 +207,7 @@
                             const imgSrcUrl = URL.createObjectURL(imgBlob);
                             const imgTag = document.createElement("img");
                             imgTag.src = imgSrcUrl;
-                            imgTag.style.width = "400px";
+                            imgTag.style.width = "45vw";
                             imagesOutput.append(imgTag);
                             imagesOutput.append(document.createElement("br"));
                         }
