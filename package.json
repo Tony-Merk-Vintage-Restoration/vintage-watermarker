@@ -1,0 +1,16 @@
+{
+  "name": "vintage-watermarker",
+  "version": "1.0.0",
+  "description": "Easily watermark images with Vintage Restoration logo",
+  "scripts": {
+    "build": "npx @11ty/eleventy",
+    "serve": "rm -rf _site && npx @11ty/eleventy --serve"
+  },
+  "author": "CJ Burkey",
+  "license": "GPL-3.0-only",
+  "type": "module",
+  "dependencies": {
+    "@11ty/eleventy": "^3.1.2",
+    "@imagemagick/magick-wasm": "^0.0.38"
+  }
+}

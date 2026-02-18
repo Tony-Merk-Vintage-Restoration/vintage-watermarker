@@ -1,0 +1,9 @@
+# Node
+node_modules
+
+# 11ty
+_site
+
+# Mac
+.DS_Store
+__MACOSX/
