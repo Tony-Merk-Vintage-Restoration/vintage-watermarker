@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Easily watermark images with Vintage Restoration logo",
   "scripts": {
-    "build": "npx @11ty/eleventy",
+    "build": "rm -rf _site && npx @11ty/eleventy",
     "serve": "rm -rf _site && npx @11ty/eleventy --serve"
   },
   "author": "CJ Burkey",
