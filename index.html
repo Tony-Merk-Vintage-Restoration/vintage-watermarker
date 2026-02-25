@@ -164,6 +164,9 @@
                     // Load image into ImageMagick
                     console.log(`Reading ${file.name} into ImageMagick`);
                     ImageMagick.read(imgBytes, (img) => {
+                        console.log("Reorienting?");
+                        img.autoOrient();
+
                         // Clone the watermark to allow scaling to potentially different sizes.
                         console.log("Scaling watermark");
                         // Resize watermark clone
