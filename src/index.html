@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        <title>Vintage Restoration Image Watermarker</title>
+    </head>
+    <!--
+        I didn't use AI when making this, that's why it works at least some of
+        the time. It was absolutely useless trying to get help with getting this
+        shit working, I was so pissed lmao. Two hours wasted.
+    -->
+    <body>
+        <h1>Vintage Restoration Image Watermarker</h1>
+        <p>How to use:</p>
+        <ol>
+            <li>
+                Tap the button beneath <strong>Select Images</strong> heading
+                and select all of the images you would like to add the watermark
+                onto.
+            </li>
+            <li>
+                The images currently being processed will be shown beneath the
+                <strong>Working On...</strong> heading. Once there are no image
+                names shown there, the process is complete.
+            </li>
+            <li>
+                To save the watermarked images, tap and hold each image under
+                the <strong>Finished Images</strong> heading until the context
+                menu opens, then select save to photos.
+            </li>
+        </ol>
+        <h3><label for="images-input">Select Images</label></h3>
+        <p>
+            <input
+                type="file"
+                accept="image/*"
+                multiple
+                name="images-input"
+                id="images-input"
+            />
+        </p>
+        <p>
+            <input
+                type="checkbox"
+                id="use-legal-text"
+                name="use-legal-text"
+                checked
+            />
+            <label for="use-legal-text"
+                >Add legal text to bottom of image</label
+            >
+        </p>
+        <h3>Working On...</h3>
+        <ol id="input-image-list"></ol>
+        <h3>Finished Images</h3>
+        <div id="images-output"></div>
+
+        <script type="module" src="assets/js/main.js"></script>
+    </body>
+</html>
